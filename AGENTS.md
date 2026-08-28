@@ -6,7 +6,7 @@ This file is the contract. Read it, then `manifest.json`, then pick a skill.
 ## How skills work here
 
 - **One skill = one folder** under `skills/`, with `SKILL.md` at the top.
-  31 skills: `web-design` is the router; the other 30 are leaves. A skill is
+  32 skills: `web-design` is the router; the other 31 are leaves. A skill is
   *procedural knowledge*: when you load it, you follow its workflow, gates,
   and pitfalls — you do not just "read for inspiration".
 - **Default entry:** load `web-design` first. It names 1–3 leaves. Do not
@@ -25,6 +25,7 @@ This file is the contract. Read it, then `manifest.json`, then pick a skill.
 |---|---|
 | Any web-design task (router — start here) | `web-design` |
 | Build a landing page / product site with taste (default) | `design-taste-frontend` |
+| Local trade / service business (barber, landscaper, plumber, salon) | `local-service-business` |
 | Same, but stricter Anthropic-official rules | `frontend-design` (Hermes: `anthropic-frontend-design`) |
 | Run a full slop-test audit + self-critique before shipping | `hallmark` |
 | Need a design system (palette/type/layout tokens) from data | `ui-ux-pro-max` (then `design-system`) |
