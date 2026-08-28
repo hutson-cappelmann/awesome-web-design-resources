@@ -32,7 +32,9 @@ cd awesome-web-design-resources
    follow its gates, scripts, and pitfalls.
 4. Use `shared/` for research notes and script sources referenced by skills.
 5. For section-level building blocks, see `docs/resources.md`
-   (shadcnblocks, blocks.so, Magic UI, Aceternity, daisyUI, …).
+   (shadcnblocks, blocks.so, Magic UI, Aceternity, daisyUI, 21st.dev, …).
+6. `docs/candidates.md` — reviewed-but-not-yet-vendored items (more
+   anthropics/skills, Vercel Next.js skills, Figma MCP paths).
 
 ## The skills
 
