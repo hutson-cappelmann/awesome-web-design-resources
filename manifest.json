@@ -1,0 +1,307 @@
+{
+  "name": "awesome-web-design-resources",
+  "version": "1.0.0",
+  "description": "A single repo an AI web-design agent can clone and use: 28 flattened design skills from 6 upstream sources, plus curated references, all license-provenance tagged.",
+  "license": "MIT (umbrella); each skill retains its upstream license under licenses/<source>/ and skills/<name>/PROVENANCE.md",
+  "generated": "2026-08-27",
+  "skills": [
+    {
+      "name": "frontend-design",
+      "dir": "skills/frontend-design",
+      "source": "anthropics/claude-code",
+      "upstream_path": "plugins/frontend-design/skills/frontend-design",
+      "commit": "92bb6850f1bb51f4d18b03b23d643642f9d687b6",
+      "license": "Anthropic Commercial Terms of Service (see licenses/frontend-design/LICENSE.md)",
+      "category": "core",
+      "one_liner": "Anthropic's official skill: pick a real aesthetic direction before coding, deliberate typography pairing, no templated defaults."
+    },
+    {
+      "name": "design-taste-frontend",
+      "dir": "skills/design-taste-frontend",
+      "source": "Leonxlnx/taste-skill",
+      "upstream_path": "skills/taste-skill",
+      "commit": "ccbc15639c97057cbfcf32ecebc38ef716e4bb37",
+      "license": "MIT",
+      "category": "core",
+      "one_liner": "Default anti-slop skill (v2): infer design language from the brief, tune variance/motion/density dials, GSAP skeletons, pre-flight hard rules."
+    },
+    {
+      "name": "hallmark",
+      "dir": "skills/hallmark",
+      "source": "Nutlope/hallmark",
+      "upstream_path": "skills/hallmark",
+      "commit": "13ac0ec7e148655948100b6396439e481361d690",
+      "license": "MIT",
+      "category": "core",
+      "one_liner": "21 themes, 57 slop-test gates, pre-emit self-critique; verbs: build, audit, redesign, study (extract design DNA, emit design.md)."
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "dir": "skills/ui-ux-pro-max",
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "upstream_path": ".claude/skills/ui-ux-pro-max",
+      "commit": "8bd29e775453ebcae52b6e6514fbf134df0c5770",
+      "license": "MIT",
+      "category": "core",
+      "one_liner": "Searchable local design database: 79 styles, 192 product palettes, 74 font pairings, 119 UX guidelines, 105 icons, 17 GSAP presets, 25 chart types, 22 stacks.",
+      "scripts": "skills/ui-ux-pro-max/scripts/search.py (BM25 over local CSVs in skills/ui-ux-pro-max/data/)"
+    },
+    {
+      "name": "huashu-design",
+      "dir": "skills/huashu-design",
+      "source": "alchaincyf/huashu-design",
+      "upstream_path": "(repo root SKILL.md)",
+      "commit": "a790f704d85f277cc93d2081b0840d00036969bb",
+      "license": "MIT (commercial use allowed since 2026-05-14)",
+      "category": "production",
+      "one_liner": "HTML-native high-fidelity prototyping, slides, motion, expert review; always 3 direction drafts first; MP4/GIF export. (Chinese-first docs, agent-agnostic.)"
+    },
+    {
+      "name": "web-design-engineer",
+      "dir": "skills/web-design-engineer",
+      "source": "ConardLi/garden-skills",
+      "upstream_path": "skills/web-design-engineer",
+      "commit": "aaf9a82f5efd73e87cc0998edc398e75bfc35901",
+      "license": "MIT",
+      "category": "production",
+      "one_liner": "Top-tier design engineer persona for browser-rendered artifacts: pages, dashboards, prototypes, decks, data viz. Bar is 'stunning', not 'functional'."
+    },
+    {
+      "name": "image-to-code",
+      "dir": "skills/image-to-code",
+      "source": "Leonxlnx/taste-skill",
+      "upstream_path": "skills/image-to-code-skill",
+      "commit": "ccbc15639c97057cbfcf32ecebc38ef716e4bb37",
+      "license": "MIT",
+      "category": "workflow",
+      "one_liner": "Image-first: generate section-specific design references, analyze them deeply, implement the site to match them."
+    },
+    {
+      "name": "redesign-existing-projects",
+      "dir": "skills/redesign-existing-projects",
+      "source": "Leonxlnx/taste-skill",
+      "upstream_path": "skills/redesign-skill",
+      "commit": "ccbc15639c97057cbfcf32ecebc38ef716e4bb37",
+      "license": "MIT",
+      "category": "workflow",
+      "one_liner": "Audit an existing project, identify generic AI patterns, upgrade to premium quality without breaking functionality."
+    },
+    {
+      "name": "design-system",
+      "dir": "skills/design-system",
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "upstream_path": ".claude/skills/design-system",
+      "commit": "8bd29e775453ebcae52b6e6514fbf134df0c5770",
+      "license": "MIT",
+      "category": "data",
+      "one_liner": "Design-system builder with slide-strategy/layout/typography/color CSVs and search scripts."
+    },
+    {
+      "name": "design",
+      "dir": "skills/design",
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "upstream_path": ".claude/skills/design",
+      "commit": "8bd29e775453ebcae52b6e6514fbf134df0c5770",
+      "license": "MIT",
+      "category": "data",
+      "one_liner": "General UI design skill with icon-generation and CIP (corporate identity) scripts."
+    },
+    {
+      "name": "brand",
+      "dir": "skills/brand",
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "upstream_path": ".claude/skills/brand",
+      "commit": "8bd29e775453ebcae52b6e6514fbf134df0c5770",
+      "license": "MIT",
+      "category": "data",
+      "one_liner": "Brand identity: logo direction, naming, brand voice, deliverables."
+    },
+    {
+      "name": "ui-styling",
+      "dir": "skills/ui-styling",
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "upstream_path": ".claude/skills/ui-styling",
+      "commit": "8bd29e775453ebcae52b6e6514fbf134df0c5770",
+      "license": "MIT",
+      "category": "data",
+      "one_liner": "UI styling with bundled canvas fonts (5.5MB) for design-canvas rendering."
+    },
+    {
+      "name": "slides",
+      "dir": "skills/slides",
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "upstream_path": ".claude/skills/slides",
+      "commit": "8bd29e775453ebcae52b6e6514fbf134df0c5770",
+      "license": "MIT",
+      "category": "data",
+      "one_liner": "Presentation/deck design skill."
+    },
+    {
+      "name": "banner-design",
+      "dir": "skills/banner-design",
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "upstream_path": ".claude/skills/banner-design",
+      "commit": "8bd29e775453ebcae52b6e6514fbf134df0c5770",
+      "license": "MIT",
+      "category": "data",
+      "one_liner": "Marketing banner/hero design skill."
+    },
+    {
+      "name": "gpt-taste",
+      "dir": "skills/gpt-taste",
+      "source": "Leonxlnx/taste-skill",
+      "upstream_path": "skills/gpt-tasteskill",
+      "commit": "ccbc15639c97057cbfcf32ecebc38ef716e4bb37",
+      "license": "MIT",
+      "category": "style",
+      "one_liner": "Awwwards-level: AIDA structure, wide editorial type, gapless bento, strict GSAP ScrollTrigger recipes, deterministic layout randomization."
+    },
+    {
+      "name": "minimalist-ui",
+      "dir": "skills/minimalist-ui",
+      "source": "Leonxlnx/taste-skill",
+      "upstream_path": "skills/minimalist-skill",
+      "commit": "ccbc15639c97057cbfcf32ecebc38ef716e4bb37",
+      "license": "MIT",
+      "category": "style",
+      "one_liner": "Premium utilitarian minimalism: warm monochrome, flat bento, muted pastels, banned-generic-SaaS list."
+    },
+    {
+      "name": "industrial-brutalist-ui",
+      "dir": "skills/industrial-brutalist-ui",
+      "source": "Leonxlnx/taste-skill",
+      "upstream_path": "skills/brutalist-skill",
+      "commit": "ccbc15639c97057cbfcf32ecebc38ef716e4bb37",
+      "license": "MIT",
+      "category": "style",
+      "one_liner": "Swiss print + military terminal: rigid grids, extreme scale contrast, CRT/halftone degradation. (Beta.)"
+    },
+    {
+      "name": "high-end-visual-design",
+      "dir": "skills/high-end-visual-design",
+      "source": "Leonxlnx/taste-skill",
+      "upstream_path": "skills/soft-skill",
+      "commit": "ccbc15639c97057cbfcf32ecebc38ef716e4bb37",
+      "license": "MIT",
+      "category": "style",
+      "one_liner": "Expensive soft-UI look: premium fonts, whitespace, depth, smooth motion."
+    },
+    {
+      "name": "stitch-design-taste",
+      "dir": "skills/stitch-design-taste",
+      "source": "Leonxlnx/taste-skill",
+      "upstream_path": "skills/stitch-skill",
+      "commit": "ccbc15639c97057cbfcf32ecebc38ef716e4bb37",
+      "license": "MIT",
+      "category": "style",
+      "one_liner": "Google-Stitch-compatible semantic design rules for premium UI generation."
+    },
+    {
+      "name": "design-taste-frontend-v1",
+      "dir": "skills/design-taste-frontend-v1",
+      "source": "Leonxlnx/taste-skill",
+      "upstream_path": "skills/taste-skill-v1",
+      "commit": "ccbc15639c97057cbfcf32ecebc38ef716e4bb37",
+      "license": "MIT",
+      "category": "style",
+      "one_liner": "Original v1 taste skill, kept for projects pinned to its exact behavior."
+    },
+    {
+      "name": "full-output-enforcement",
+      "dir": "skills/full-output-enforcement",
+      "source": "Leonxlnx/taste-skill",
+      "upstream_path": "skills/output-skill",
+      "commit": "ccbc15639c97057cbfcf32ecebc38ef716e4bb37",
+      "license": "MIT",
+      "category": "workflow",
+      "one_liner": "Bans lazy truncation and placeholder comments; forces complete unabridged code output."
+    },
+    {
+      "name": "brandkit",
+      "dir": "skills/brandkit",
+      "source": "Leonxlnx/taste-skill",
+      "upstream_path": "skills/brandkit",
+      "commit": "ccbc15639c97057cbfcf32ecebc38ef716e4bb37",
+      "license": "MIT",
+      "category": "imagegen",
+      "one_liner": "Image-gen only: premium brand-guidelines boards, logo systems, identity decks. No code."
+    },
+    {
+      "name": "imagegen-frontend-web",
+      "dir": "skills/imagegen-frontend-web",
+      "source": "Leonxlnx/taste-skill",
+      "upstream_path": "skills/imagegen-frontend-web",
+      "commit": "ccbc15639c97057cbfcf32ecebc38ef716e4bb37",
+      "license": "MIT",
+      "category": "imagegen",
+      "one_liner": "Image-gen only: one horizontal reference image PER section, varied composition, single palette. No code."
+    },
+    {
+      "name": "imagegen-frontend-mobile",
+      "dir": "skills/imagegen-frontend-mobile",
+      "source": "Leonxlnx/taste-skill",
+      "upstream_path": "skills/imagegen-frontend-mobile",
+      "commit": "ccbc15639c97057cbfcf32ecebc38ef716e4bb37",
+      "license": "MIT",
+      "category": "imagegen",
+      "one_liner": "Image-gen only: premium app-native mobile screen concepts in phone mockups. No code."
+    },
+    {
+      "name": "beautiful-article",
+      "dir": "skills/beautiful-article",
+      "source": "ConardLi/garden-skills",
+      "upstream_path": "skills/beautiful-article",
+      "commit": "aaf9a82f5efd73e87cc0998edc398e75bfc35901",
+      "license": "MIT",
+      "category": "production",
+      "one_liner": "Convert source content into beautiful, browser-rendered long-form articles."
+    },
+    {
+      "name": "web-video-presentation",
+      "dir": "skills/web-video-presentation",
+      "source": "ConardLi/garden-skills",
+      "upstream_path": "skills/web-video-presentation",
+      "commit": "aaf9a82f5efd73e87cc0998edc398e75bfc35901",
+      "license": "MIT",
+      "category": "production",
+      "one_liner": "Narration-driven click-through web video presentations with TTS provider scaffolds."
+    },
+    {
+      "name": "gpt-image-2",
+      "dir": "skills/gpt-image-2",
+      "source": "ConardLi/garden-skills",
+      "upstream_path": "skills/gpt-image-2",
+      "commit": "aaf9a82f5efd73e87cc0998edc398e75bfc35901",
+      "license": "MIT",
+      "category": "imagegen",
+      "one_liner": "GPT-image-2 prompt engineering and generation workflow."
+    },
+    {
+      "name": "kb-retriever",
+      "dir": "skills/kb-retriever",
+      "source": "ConardLi/garden-skills",
+      "upstream_path": "skills/kb-retriever",
+      "commit": "aaf9a82f5efd73e87cc0998edc398e75bfc35901",
+      "license": "MIT",
+      "category": "utility",
+      "one_liner": "Knowledge-base retrieval skill (RAG-style) — general purpose, not design-specific."
+    }
+  ],
+  "shared": [
+    {"dir": "shared/taste-skill-research", "source": "Leonxlnx/taste-skill", "what": "Anti-repetition research notes behind taste-skill"},
+    {"dir": "shared/taste-skill-scripts", "source": "Leonxlnx/taste-skill", "what": "Helper scripts"},
+    {"dir": "shared/taste-skill-examples", "source": "Leonxlnx/taste-skill", "what": "Example output images"},
+    {"dir": "shared/ui-ux-pro-max-cli-src", "source": "nextlevelbuilder/ui-ux-pro-max-skill", "what": "uipro CLI source (design_system.py, search.py, templates)"},
+    {"dir": "shared/ui-ux-pro-max-docs", "source": "nextlevelbuilder/ui-ux-pro-max-skill", "what": "CLI docs"},
+    {"dir": "shared/garden-skills-prompts", "source": "ConardLi/garden-skills", "what": "Distilled prompts incl. claude-design-system-prompt.md"}
+  ],
+  "upstream_commits": {
+    "Leonxlnx/taste-skill": "ccbc15639c97057cbfcf32ecebc38ef716e4bb37",
+    "alchaincyf/huashu-design": "a790f704d85f277cc93d2081b0840d00036969bb",
+    "nextlevelbuilder/ui-ux-pro-max-skill": "8bd29e775453ebcae52b6e6514fbf134df0c5770",
+    "Nutlope/hallmark": "13ac0ec7e148655948100b6396439e481361d690",
+    "ConardLi/garden-skills": "aaf9a82f5efd73e87cc0998edc398e75bfc35901",
+    "anthropics/claude-code": "92bb6850f1bb51f4d18b03b23d643642f9d687b6",
+    "wilwaldon/Claude-Code-Frontend-Design-Toolkit": "README vendored at docs/toolkit-index-wilwaldon.md (no LICENSE in upstream; used as curated index only)"
+  }
+}
