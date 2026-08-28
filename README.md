@@ -1,12 +1,12 @@
 # awesome-web-design-resources
 
-A single repo an AI web-design agent can clone and use. 28 design skills
-flattened from 6 upstream repos (no nested umbrellas), each with
+A single repo an AI web-design agent can clone and use. 30 design skills
+flattened from 7 upstream repos (no nested umbrellas), each with
 `PROVENANCE.md` + upstream license, plus curated resource catalogs.
 
 ```
 awesome-web-design-resources/
-├── skills/            # 28 skills — one folder per skill, SKILL.md at top
+├── skills/            # 30 skills — one folder per skill, SKILL.md at top
 ├── shared/            # research notes, CLI sources, distilled prompts (per-source)
 ├── docs/              # upstream READMEs, toolkits index, resources catalog
 ├── licenses/          # upstream LICENSE files, per source
@@ -68,6 +68,8 @@ cd awesome-web-design-resources
 | `web-video-presentation` | Narration-driven click-through web video presentations + TTS scaffolds | ConardLi/garden-skills |
 | `gpt-image-2` | GPT-image-2 prompt engineering and generation workflow | ConardLi/garden-skills |
 | `kb-retriever` | Knowledge-base retrieval (general purpose, not design-specific) | ConardLi/garden-skills |
+| `web-artifacts-builder` | Multi-component HTML artifacts (React + Tailwind + shadcn/ui) with scaffold/bundle scripts | anthropics/skills |
+| `theme-factory` | 10 preset font+color themes for slides/docs/landing pages, or generate one on the fly | anthropics/skills |
 
 ⚠ = Anthropic commercial license, see below.
 
@@ -119,7 +121,8 @@ Vendored from, in order of contribution:
 [nextlevelbuilder/ui-ux-pro-max-skill](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill),
 [Nutlope/hallmark](https://github.com/Nutlope/hallmark),
 [ConardLi/garden-skills](https://github.com/ConardLi/garden-skills),
-[anthropics/claude-code](https://github.com/anthropics/claude-code).
+[anthropics/claude-code](https://github.com/anthropics/claude-code),
+[anthropics/skills](https://github.com/anthropics/skills).
 Curated resource index from
 [wilwaldon/Claude-Code-Frontend-Design-Toolkit](https://github.com/wilwaldon/Claude-Code-Frontend-Design-Toolkit)
 (README vendored at `docs/toolkit-index-wilwaldon.md`).

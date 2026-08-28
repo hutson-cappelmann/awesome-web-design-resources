@@ -1,7 +1,7 @@
 {
   "name": "awesome-web-design-resources",
-  "version": "1.0.0",
-  "description": "A single repo an AI web-design agent can clone and use: 28 flattened design skills from 6 upstream sources, plus curated references, all license-provenance tagged.",
+  "version": "1.1.0",
+  "description": "A single repo an AI web-design agent can clone and use: 30 flattened design skills from 7 upstream sources, plus curated references, all license-provenance tagged.",
   "license": "MIT (umbrella); each skill retains its upstream license under licenses/<source>/ and skills/<name>/PROVENANCE.md",
   "generated": "2026-08-27",
   "skills": [
@@ -284,16 +284,60 @@
       "commit": "aaf9a82f5efd73e87cc0998edc398e75bfc35901",
       "license": "MIT",
       "category": "utility",
-      "one_liner": "Knowledge-base retrieval skill (RAG-style) — general purpose, not design-specific."
+      "one_liner": "Knowledge-base retrieval skill (RAG-style) \u2014 general purpose, not design-specific."
+    },
+    {
+      "name": "web-artifacts-builder",
+      "dir": "skills/web-artifacts-builder",
+      "source": "anthropics/skills",
+      "upstream_path": "skills/web-artifacts-builder",
+      "commit": "3b3fad96af16a10759d930941b4520ba0c40edae",
+      "license": "Apache-2.0",
+      "category": "workflow",
+      "one_liner": "Anthropic's suite for multi-component HTML artifacts (React + Tailwind + shadcn/ui) with scaffold/bundle scripts."
+    },
+    {
+      "name": "theme-factory",
+      "dir": "skills/theme-factory",
+      "source": "anthropics/skills",
+      "upstream_path": "skills/theme-factory",
+      "commit": "3b3fad96af16a10759d930941b4520ba0c40edae",
+      "license": "Apache-2.0",
+      "category": "data",
+      "one_liner": "10 preset professional font+color themes for slides/docs/landing pages, or generate a new theme on the fly."
     }
   ],
   "shared": [
-    {"dir": "shared/taste-skill-research", "source": "Leonxlnx/taste-skill", "what": "Anti-repetition research notes behind taste-skill"},
-    {"dir": "shared/taste-skill-scripts", "source": "Leonxlnx/taste-skill", "what": "Helper scripts"},
-    {"dir": "shared/taste-skill-examples", "source": "Leonxlnx/taste-skill", "what": "Example output images"},
-    {"dir": "shared/ui-ux-pro-max-cli-src", "source": "nextlevelbuilder/ui-ux-pro-max-skill", "what": "uipro CLI source (design_system.py, search.py, templates)"},
-    {"dir": "shared/ui-ux-pro-max-docs", "source": "nextlevelbuilder/ui-ux-pro-max-skill", "what": "CLI docs"},
-    {"dir": "shared/garden-skills-prompts", "source": "ConardLi/garden-skills", "what": "Distilled prompts incl. claude-design-system-prompt.md"}
+    {
+      "dir": "shared/taste-skill-research",
+      "source": "Leonxlnx/taste-skill",
+      "what": "Anti-repetition research notes behind taste-skill"
+    },
+    {
+      "dir": "shared/taste-skill-scripts",
+      "source": "Leonxlnx/taste-skill",
+      "what": "Helper scripts"
+    },
+    {
+      "dir": "shared/taste-skill-examples",
+      "source": "Leonxlnx/taste-skill",
+      "what": "Example output images"
+    },
+    {
+      "dir": "shared/ui-ux-pro-max-cli-src",
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "what": "uipro CLI source (design_system.py, search.py, templates)"
+    },
+    {
+      "dir": "shared/ui-ux-pro-max-docs",
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "what": "CLI docs"
+    },
+    {
+      "dir": "shared/garden-skills-prompts",
+      "source": "ConardLi/garden-skills",
+      "what": "Distilled prompts incl. claude-design-system-prompt.md"
+    }
   ],
   "upstream_commits": {
     "Leonxlnx/taste-skill": "ccbc15639c97057cbfcf32ecebc38ef716e4bb37",
@@ -302,6 +346,7 @@
     "Nutlope/hallmark": "13ac0ec7e148655948100b6396439e481361d690",
     "ConardLi/garden-skills": "aaf9a82f5efd73e87cc0998edc398e75bfc35901",
     "anthropics/claude-code": "92bb6850f1bb51f4d18b03b23d643642f9d687b6",
-    "wilwaldon/Claude-Code-Frontend-Design-Toolkit": "README vendored at docs/toolkit-index-wilwaldon.md (no LICENSE in upstream; used as curated index only)"
+    "wilwaldon/Claude-Code-Frontend-Design-Toolkit": "README vendored at docs/toolkit-index-wilwaldon.md (no LICENSE in upstream; used as curated index only)",
+    "anthropics/skills": "3b3fad96af16a10759d930941b4520ba0c40edae"
   }
 }

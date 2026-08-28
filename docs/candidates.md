@@ -7,8 +7,8 @@ what it adds, why it was or wasn't added, and the decision needed.
 
 | Skill | Upstream | License | Adds | Status |
 |---|---|---|---|---|
-| `web-artifacts-builder` | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder) | Apache-2.0 (per-skill LICENSE.txt) | Anthropic's official workflow for building interactive single-file HTML artifacts (data viz, dashboards, tools) — complements `web-design-engineer` on the "artifact" side | pending go-ahead |
-| `theme-factory` | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/theme-factory) | Apache-2.0 | 10 preset font+color themes + on-the-fly theme generation for slides/docs/landing pages; pairs directly with the DESIGN.md workflow in AGENTS.md | pending go-ahead |
+| `web-artifacts-builder` | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/web-artifacts-builder) | Apache-2.0 (per-skill LICENSE.txt) | Anthropic's official workflow for building multi-component HTML artifacts (React + Tailwind + shadcn/ui) | ✅ vendored 2026-08-28 at commit `3b3fad9` |
+| `theme-factory` | [anthropics/skills](https://github.com/anthropics/skills/tree/main/skills/theme-factory) | Apache-2.0 | 10 preset font+color themes + on-the-fly theme generation for slides/docs/landing pages; pairs directly with the DESIGN.md workflow in AGENTS.md | ✅ vendored 2026-08-28 at commit `3b3fad9` |
 
 Notes:
 - `anthropics/skills` is the upstream of our already-vendored `frontend-design`
