@@ -36,6 +36,16 @@
       "one_liner": "Default anti-slop skill (v2): infer design language from the brief, tune variance/motion/density dials, GSAP skeletons, pre-flight hard rules."
     },
     {
+      "name": "local-service-business",
+      "dir": "skills/local-service-business",
+      "source": "original",
+      "upstream_path": "(this repo)",
+      "commit": null,
+      "license": "MIT",
+      "category": "taste",
+      "one_liner": "Local trade and service business sites. Visual-outcome trades are photo-led; presence trades are trust-led. Phone is the action."
+    },
+    {
       "name": "hallmark",
       "dir": "skills/hallmark",
       "source": "Nutlope/hallmark",

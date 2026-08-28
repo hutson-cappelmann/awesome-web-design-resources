@@ -7,7 +7,7 @@ license: MIT
 metadata:
   hermes:
     tags: [web-design, anti-slop, router, frontend, umbrella]
-    related_skills: [design-taste-frontend, hallmark, frontend-design, ui-ux-pro-max, web-design-engineer, full-output-enforcement, web-artifacts-builder, theme-factory]
+    related_skills: [design-taste-frontend, local-service-business, hallmark, frontend-design, ui-ux-pro-max, web-design-engineer, full-output-enforcement, web-artifacts-builder, theme-factory]
 ---
 
 # Web Design (umbrella)
@@ -42,6 +42,7 @@ Do not use for:
 | You want to… | Load |
 |---|---|
 | Default landing / product / portfolio (anti-slop) | `design-taste-frontend` |
+| Local trade / service business (barber, landscaper, plumber, salon) | `local-service-business` |
 | Stricter Anthropic-official aesthetic rules | `frontend-design` (Hermes alias: `anthropic-frontend-design`) |
 | Full slop-test audit / redesign / study DNA | `hallmark` |
 | Data-driven tokens (styles, palettes, type, UX rules, GSAP) | `ui-ux-pro-max` then `design-system` |
