@@ -24,6 +24,25 @@ belong in this list. URLs verified reachable 2026-08-27.
 | **Cult UI** | https://cultui.dev | 78+ free animated components | Free |
 | **Animate UI** | https://animateui.com | Animates the shadcn components you already have | MIT |
 
+## GPU / shader graphics (specialist — read the caveat)
+
+| Resource | URL | What you get | License / cost |
+|---|---|---|---|
+| **vgpu** (Vercel Labs) | https://github.com/vercel-labs/vgpu · https://vgpu.sh | WebGPU in TypeScript: typed WGSL imports, shaders, 3D scenes, GPU tensors, math viz. One API across browser, headless Node, and a deterministic mock for tests. ~25 KB gzipped for a fullscreen effect | MIT |
+
+> **Agent-ready, which is why it's listed.** vgpu publishes `agents.md` and
+> `llms.txt`, and docs, examples, and shader validation all run from the CLI
+> (`npx vgpu docs`, `npx vgpu examples`, `npx vgpu check`) — an agent can work
+> from it offline instead of scraping a docs site.
+>
+> **Reach for it only on high-production work** — launch pages, showcase
+> sites, motion. It is the wrong tool for local-business and small-client
+> sites: WebGPU is not universally supported on the phones those customers
+> carry, and 25 KB gzipped is the *floor* before shaders or scene, which blows
+> a mobile-data weight budget. If the page's job is "show a phone number,"
+> this is not the answer. This is a library you install, not a skill you
+> follow — it is catalogued here, never vendored into `skills/`.
+
 ## Same philosophy, different base (not just React)
 
 | Resource | URL | What you get | License / cost |
