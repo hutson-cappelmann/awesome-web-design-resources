@@ -6,7 +6,7 @@ This file is the contract. Read it, then `manifest.json`, then pick a skill.
 ## How skills work here
 
 - **One skill = one folder** under `skills/`, with `SKILL.md` at the top.
-  28 skills, no nesting. A skill is *procedural knowledge*: when you load it,
+  30 skills, no nesting. A skill is *procedural knowledge*: when you load it,
   you follow its workflow, gates, and pitfalls — you do not just "read for
   inspiration".
 - `PROVENANCE.md` in each skill dir tells you upstream repo, path, commit,
@@ -27,6 +27,8 @@ This file is the contract. Read it, then `manifest.json`, then pick a skill.
 | Need a design system (palette/type/layout tokens) from data | `ui-ux-pro-max` (then `design-system`) |
 | Build slides, motion pieces, high-fidelity prototypes (Chinese-first docs) | `huashu-design` |
 | Build any browser artifact at "stunning" bar: pages, dashboards, decks, viz | `web-design-engineer` |
+| Build a complex multi-component HTML artifact (React + shadcn/ui, state, routing) | `web-artifacts-builder` |
+| Need a consistent font+color theme across slides/docs/landing pages | `theme-factory` |
 | Have a screenshot/reference and must match it | `image-to-code` |
 | Upgrade an existing mediocre site | `redesign-existing-projects` |
 | Awwwards-level marketing page | `gpt-taste` |
