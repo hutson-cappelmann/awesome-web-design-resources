@@ -1,12 +1,12 @@
 # awesome-web-design-resources
 
-A single repo an AI web-design agent can clone and use. 30 design skills
-flattened from 7 upstream repos (no nested umbrellas), each with
+A single repo an AI web-design agent can clone and use. 31 design skills
+(30 leaves + `web-design` router) flattened from 7 upstream repos, each with
 `PROVENANCE.md` + upstream license, plus curated resource catalogs.
 
 ```
 awesome-web-design-resources/
-├── skills/            # 30 skills — one folder per skill, SKILL.md at top
+├── skills/            # 31 skills — web-design router + 30 leaves, SKILL.md at top
 ├── shared/            # research notes, CLI sources, distilled prompts (per-source)
 ├── docs/              # upstream READMEs, toolkits index, resources catalog
 ├── licenses/          # upstream LICENSE files, per source
@@ -27,9 +27,9 @@ cd awesome-web-design-resources
 
 1. `git clone` this repo.
 2. Read `AGENTS.md` (this is the contract), then `manifest.json`.
-3. Pick a skill by `name` from the manifest; read `skills/<name>/SKILL.md`
-   in full before doing the design work. The skill owns the workflow —
-   follow its gates, scripts, and pitfalls.
+3. Load `web-design` first (router). It names 1–3 leaf skills; read each
+   `skills/<name>/SKILL.md` in full before doing the design work. The leaf
+   owns the workflow — follow its gates, scripts, and pitfalls.
 4. Use `shared/` for research notes and script sources referenced by skills.
 5. For section-level building blocks, see `docs/resources.md`
    (shadcnblocks, blocks.so, Magic UI, Aceternity, daisyUI, 21st.dev, …).
@@ -40,8 +40,9 @@ cd awesome-web-design-resources
 
 | Skill | What it does | From |
 |---|---|---|
+| `web-design` | **Router.** Load first: anti-slop contract, 1–3 leaf picks, tools catalog, Hermes companions (`quickpage-publish`, `claude-design`) | original (this repo) |
 | `design-taste-frontend` | **Default anti-slop skill.** Infer design language from the brief; tune variance/motion/density; GSAP skeletons; pre-flight hard rules | Leonxlnx/taste-skill |
-| `frontend-design` | **Anthropic's official skill.** Pick a real aesthetic direction before coding; deliberate type pairing; no templated defaults | anthropics/claude-code ⚠ |
+| `frontend-design` | **Anthropic's official skill.** Pick a real aesthetic direction before coding; deliberate type pairing; no templated defaults. Hermes install name: `anthropic-frontend-design` when `frontend-design/` is already a category | anthropics/claude-code ⚠ |
 | `hallmark` | 21 themes, 57 slop-test gates, pre-emit self-critique; verbs: build/audit/redesign/study → `design.md` | Nutlope/hallmark |
 | `ui-ux-pro-max` | Searchable local design DB: 79 styles, 192 palettes, 74 font pairings, 119 UX rules, 105 icons, 17 GSAP presets, 25 charts, 22 stacks | nextlevelbuilder/ui-ux-pro-max-skill |
 | `huashu-design` | High-fidelity HTML prototypes, slides, motion, expert review; always 3 direction drafts; MP4/GIF export (Chinese-first docs) | alchaincyf/huashu-design |
